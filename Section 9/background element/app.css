@@ -1,0 +1,18 @@
+section {
+    width: 80%;
+    height: 800px;
+    /* background-image: url("https://images.unsplash.com/photo-1559751952-c38890ef1d6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80");
+    background-size: cover;
+    background-position: 10% 85%; */
+    margin: 0 auto;
+
+    /* background element with all values  */
+    background: url("https://images.unsplash.com/photo-1559751952-c38890ef1d6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80") no-repeat 10% 85%/cover;
+    /* I think it is better to be specific on what you are background value you're using. FE; background-size, background-position */
+}
+
+h1 {
+    font-size: 100px;
+    color: #fff;
+
+}

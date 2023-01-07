@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <form action="/tacos">
+        <p>
+            <!-- for and id need to be the same to be connected on labels to inputs -->
+            <label for="username">Enter a Username:</label>
+            <input id="username" type="" placeholder="Username" name="username">
+            <!-- the name attibute will show up in the search bar like this so you know what it is, the name attribute is username and it will show like this http://127.0.0.1:5500/tacos?username=AXMZ -->
+        </p>
+        <p>
+            <label for="pass">Enter a Password:</label>
+            <input id="pass" type="password" placeholder="Enter Password" name="password">
+        </p>
+        <button type="">IN THE MIDDLE</button>
+        <p>
+            <label for="color">Enter your Color:</label>
+            <input id="color" type="color" name="color">
+        </p>
+        <p>
+            <label for="age">Enter your Age:</label>
+            <input id="age" type="number" placeholder="Enter your age" name="age">
+        </p>
+        <p>
+            <label for="times">Enter your time of application</label>
+            <input id="times" type="time" name="time">
+        </p>
+
+        <button>Submit!!!!</button>
+        <!-- Input Syntax is weird better to use button element like the one above -->
+        <input type="submit" value="CLICK ME">
+    </form>
+    <hr>
+    <h1>Hijacking Searches</h1>
+    <h2>Search Below:</h2>
+    <h3>Reddit</h3>
+    <form action="https://www.reddit.com/search" target="_blank">
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+    <h3>Youtube</h3>
+    <form action="https://www.youtube.com/results" target="_blank">
+        <input type="text" name="search_query">
+        <button>Search Youtube</button>
+    </form>
+    <h3>Google</h3>
+    <form action="https://www.google.com/search" target="_blank">
+        <input type="text" name="q" placeholder="Google Search">
+        <button>Search Google! Click Here!</button>
+    </form>
+    <h3>Bing</h3>
+    <form action="https://www.bing.com/search" target="_blank">
+        <input type="text" name="q" placeholder="Bing">
+        <button>Search Bing</button>
+    </form>
+
+    <h2>More Inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to everything</label>
+        <p>
+            <!-- When selecting multiple radios and have them be connected/grouped so you can only select one, make sure you give them the same name attribute!!!! -->
+            <!-- Make sure the for attribute and id are the small so you dont get confused -->
+            <!-- Value attribute is what we are going to see in the URL, for example the first label/input you would see: size=xs because the value is x-small-->
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs"><br>
+            <label for="small">S:</label>
+            <input type="radio" name="size" id="small"><br>
+            <label for="medium">M:</label>
+            <input type="radio" name="size" id="medium"><br>
+            <label for="large">L:</label>
+            <input type="radio" name="size" id="large">
+        </p>
+        <p>
+            <!-- Value attribute shows in the URL -->
+            <!-- label to for, select to name, and select to id needs to have the same attribute!  -->
+            <label for="meal">Please select a meal!</label>
+            <select name="meal" id="meal">
+                <option value="">-- Select Meal Below --</option>
+                <option value="fish">Fish</option>
+                <option value="vegs">Vegatarian</option>
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of cheese:</label>
+            <input type="range" id="cheese" min="1" max="10" name="cheese_level">
+        </p>
+        <p>
+            <label for="question">Ask any question below:</label><br>
+            <textarea name="Question?" id="question" cols="30" rows="10" placeholder="Enter Question here!"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <!-- Select is a drop down menu -->
+
+    <h2>Coding Exercise</h2>
+
+    <div>
+        <form action="/registar">
+            <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="username">
+            </div>
+
+
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="password">
+            </div>
+            <button>Registar</button>
+        </form>
+    </div>
+
+    <h2>Validations</h2>
+    <form action="/dummy">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required>
+
+        <p>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" minlength="5" maxlength="20" required>
+        </p>
+        <p>
+            <!-- <input type="email" required> -->
+            <input type="url">
+        </p>
+        <button>Submit</button>
+    </form>
+
+
+</body>
+
+</html>
