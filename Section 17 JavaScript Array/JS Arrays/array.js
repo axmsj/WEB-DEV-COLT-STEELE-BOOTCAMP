@@ -31,3 +31,5 @@
 // Double equals and triple equals are just going to check for the reference in memory for arrays
 
 // const can be change only if the content has brackets. const = [sadsada] <-- stuff inside can be changed cant lose the brackets though.
+
+//
