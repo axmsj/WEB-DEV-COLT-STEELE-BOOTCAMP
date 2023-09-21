@@ -1,0 +1,12 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	}
+],
+  "settings": {
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "javascript.preferences.quoteStyle": "single"
+  }
+}

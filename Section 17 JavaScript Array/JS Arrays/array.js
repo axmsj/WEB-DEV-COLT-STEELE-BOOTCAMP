@@ -32,4 +32,4 @@
 
 // const can be change only if the content has brackets. const = [sadsada] <-- stuff inside can be changed cant lose the brackets though.
 
-//
+//Nested Arrays - we can store arrays inside other arrays!
