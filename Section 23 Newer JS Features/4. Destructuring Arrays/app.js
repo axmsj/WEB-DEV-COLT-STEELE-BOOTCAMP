@@ -123,6 +123,8 @@ const movies = [
 
 movies.filter(({ score }) => score >= 90);
 
+// Same line outcome but the second one is destructuring params
+
 // movies.map(movie => {
 //   return `${movie.title} (${movie.year}) is rated ${movie.score}`;
 // });
