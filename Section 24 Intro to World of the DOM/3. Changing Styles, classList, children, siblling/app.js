@@ -36,9 +36,9 @@ for (links of allLink) {
 
 //toggle - is basically a on and off to toggle the class. variableName.classList.toggle('class name');
 
-// children elements allow you to see the HTML elemnts of the element you listed.
+// children elements allow you to see the HTML elements of the element you listed.
 // ex paragraph.children will show the HTML collection
 // parent element is variableName.parentElement.
 
-//nextSibling and nextElementSibling
-// nextSibling will show you the node list which we haven't covered but to show the actual nextSibling you use variableName.nextElementSibling and
+//nextSibling and , nextElementSibling (previousSibling and previousElementSibling)
+// nextSibling will show you the node list which we haven't covered but to show the actual nextSibling you use variableName.nextElementSibling.
