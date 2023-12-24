@@ -1,3 +1,10 @@
+// const lis = document.querySelectorAll('li');
+// for (let li of lis) {
+//   li.addEventListener('click', function () {
+//     li.remove();
+//   });
+// }
+
 const tweetForm = document.querySelector('#tweetForm');
 const unorderedList = document.querySelector('#tweets');
 
@@ -18,3 +25,7 @@ const addTweet = (username, tweet) => {
   newLI.append(` - ${tweet}`);
   unorderedList.append(newLI);
 };
+
+unorderedList.addEventListener('click', function (e) {
+  e.target.remove();
+});
