@@ -4,15 +4,15 @@ const req = new XMLHttpRequest()
 
 req.onload = function () {
   console.log('IT LOADED')
-  console.log(this.responseText)
+  const data = JSON.parse(this.responseText)
+  console.log(data.fact, data.length)
 }
-
 req.onerror = function () {
-  console.log('ERROR ')
+  console.log('Error')
   console.log(this)
 }
 
-req.open('Get', 'https://swapi.dev/api/people/1/')
+req.open('GET', 'https://catfact.ninja/fact')
 req.send()
 
-// 'http https://swapi.dev/api/people/1/'
+// 'https://swapi.dev/api/people/1/'
