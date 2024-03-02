@@ -9,9 +9,14 @@
 
 <body>
     <h1>All The Cats</h1>
-    <p>
-        <%= cats %>
-    </p>
+    <ul>
+        <% for(cat of cats){ %>
+            <li>
+                <%= cat %>
+            </li>
+            <% } %>
+    </ul>
+
 
 </body>
 
