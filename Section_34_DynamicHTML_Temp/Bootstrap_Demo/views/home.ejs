@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
+<%- include('partials/head') %>
 
-<body>
-    <h1>The Home Page <%= 'helloworld' .toUpperCase()%>
-    </h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis reiciendis voluptatibus, corporis molestiae cum
-        molestias eius architecto facilis nisi sit fuga, velit asperiores nihil dignissimos iste laboriosam aperiam quod
-        et.</p>
-    <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos nesciunt recusandae repellendus tempore
-        veritatis, magnam consectetur consequatur, doloribus deleniti laborum, omnis neque. Impedit, dolorem nesciunt
-        consequuntur atque odit veniam dolores?
-    </p>
-</body>
 
-</html>
+    <%- include('partials/navbar') %>
+        <h1>The Home Page <%= 'helloworld' .toUpperCase()%>
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis reiciendis voluptatibus, corporis
+            molestiae
+            cum
+            molestias eius architecto facilis nisi sit fuga, velit asperiores nihil dignissimos iste laboriosam
+            aperiam
+            quod
+            et.</p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos nesciunt recusandae repellendus tempore
+            veritatis, magnam consectetur consequatur, doloribus deleniti laborum, omnis neque. Impedit, dolorem
+            nesciunt
+            consequuntur atque odit veniam dolores?
+        </p>
+        <%- include('partials/footer') %>
