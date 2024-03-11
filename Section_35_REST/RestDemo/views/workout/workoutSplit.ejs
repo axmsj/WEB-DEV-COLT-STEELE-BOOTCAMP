@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Split</title>
+</head>
+
+<body>
+    <h1>Workout Split</h1>
+    <ul>
+
+        <% for(let workouts of workout){ %>
+            <li>
+                <b>
+                    <%= workouts.day %>
+                </b> - <%= workouts.muscle %>
+            </li>
+            <% } %>
+                </li>
+    </ul>
+</body>
+
+</html>

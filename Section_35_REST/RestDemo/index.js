@@ -27,7 +27,17 @@ const comments = [
 ];
 
 app.get('/comments', (req, res) => {
-  res.render('comments/index');
+  res.render('comments/index', { comments });
+});
+
+app.get('/comments/new', (req, res) => {
+  res.render('comments/new');
+});
+
+app.post('/comments', (req, res) => {
+  const { username, comment } = req.body;
+  comments.push({ username, comment });
+  res.redirect('/comments');
 });
 
 app.get('/tacos', (req, res) => {
@@ -43,8 +53,41 @@ app.listen(3000, () => {
   console.log('ON PORT 3000!');
 });
 
-// GET /commeents - Show all comments
+// GET /comments - Show all comments
 // POST /comments - Create new comment
 // GET /comments/:id - get one comment(using ID)
 // PATCH /comment/:id - update one comment.
 // DELETE /comment/:id - Destroy one comment
+
+// practice
+const workout = [
+  {
+    day: 'Monday',
+    muscle: 'Chest',
+  },
+  {
+    day: 'Tuesday',
+    muscle: 'Legs',
+  },
+  {
+    day: 'Wednesday',
+    muscle: 'Back',
+  },
+  {
+    day: 'Thurday',
+    muscle: 'REST DAY',
+  },
+  {
+    day: 'Friday',
+    muscle: 'Shoulders and Arms',
+  },
+  {
+    day: 'Saturday',
+    muscle: 'REST',
+  },
+];
+
+// practice workout
+app.get('/workout', (req, res) => {
+  res.render('workout/workoutSplit', { workout });
+});
